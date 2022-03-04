@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    
+    width: 600px;
+    padding: 20px;
+
+
+}
+
+@keyframes hover{
+    0%{
+        opacity: 0;
+        transform: translate(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.question{
+    text-align: center;
+}
+.question .question-title{
+    animation: hover ease-out 0.3s;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.question-value{
+    animation: hover ease-out 0.3s;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.container-options{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.option{
+    animation: hover ease-out 0.3s;
+    display: flex;
+    margin: 10px 0px;
+    background-color: #1d1d1d;
+    padding: 15px 20px;
+    border-radius: 40px;
+    align-items: center;
+    padding-left: 15px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.option:hover{
+    background-color: #161616;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.option .letter{
+    background-color: black;
+    padding: 10px 14px;
+    margin-right: 15px;
+    border-radius:50%;
+}
+
+pre{
+    background-color: #1d1d1d;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.result{
+    position: absolute;
+    background-color: #161616;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+    transition: 0.3s;
+}
+.result .msg{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.result .percent{
+    color: red;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.result .hits{
+    font-size: 18px;
+}
+
+.result button{
+    padding: 12px 15px;
+    background-color: #007eff;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    bottom: -90px;
+    cursor: pointer;
+}
+
+.result button:hover{
+    transition: 0.2s;
+    background-color: #046acf;
+}
