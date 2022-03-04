@@ -33,8 +33,8 @@ const questions = [
     {
         question: 'Oque está faltando para essa função funcionar?\n\n<pre>function (){\nconsole.log("Hello Word")\n}\n</pre>',
         options:[
-            {option:'Retirar a palavra Function'},
-            {option:'Adiconar um nome à função' , value:true},
+            {option:'Retirar a palavra function'},
+            {option:'Adicionar um nome à função' , value:true},
             {option:'Remover as aspas'},
 
         ]
