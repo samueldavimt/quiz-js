@@ -20,6 +20,7 @@ body{
     
     width: 600px;
     padding: 20px;
+   
 
 
 }
@@ -84,6 +85,11 @@ body{
     border-radius:50%;
 }
 
+.value-option{
+    word-break: break-all;
+    line-height: 1.5em;
+}
+
 pre{
     background-color: #1d1d1d;
     width: 80%;
@@ -134,4 +140,52 @@ pre{
 .result button:hover{
     transition: 0.2s;
     background-color: #046acf;
+}
+
+.progress{
+    margin-top: 30px;
+    background-color: #161616;
+    width: 100%;
+    height: 20px;
+    border-radius: 2px;
+}
+.progress-percent{
+    background-color: #007eff;
+    width: 3%;
+    height: 100%;
+    display: block;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+
+@media (max-width:470px){
+    .main{
+       width: 100%;
+       padding: 20px 10px;
+    }
+
+    .option{
+       font-size: 17px;
+    }
+    .option .letter{
+        padding: 8px 12px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .result{
+        width: 100%;
+        border-radius: 2px;
+        height: 100%;
+    }
+
+    pre{
+        width: 100%;
+    }
+}
+@media (max-width:385px){
+    .option{
+        padding: 10px 15px;
+    }
 }

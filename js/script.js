@@ -17,6 +17,7 @@ let blocked = false
 const selectOption = {
 
     verify(){
+        selectOption.progressBar()
         let idQuestion = this.dataset.idQuestion
         let idOption = this.dataset.idOption
 
@@ -78,11 +79,13 @@ const selectOption = {
         qs('.result').style = 'display: block !important;'
 
         qs('.result button').onclick = selectOption.reset
+        
 
     },
 
     reset(){
         blocked = false
+        qs('.progress-percent').style.width = `3%`
         currentQuestion = 0
         hits = 0
         mistakes = 0
@@ -93,6 +96,13 @@ const selectOption = {
         },300)
         handleQuestion()
     
+    },
+
+    progressBar(){
+        let percentage = ((currentQuestion +1) / questions.length) * 100
+        console.log(percentage)
+
+        qs('.progress-percent').style.width = `${percentage}%`
     }
 }
 
